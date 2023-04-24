@@ -4,8 +4,12 @@
   "description": "a cypress automation framework with typescript",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "lint": "tsc --noEmit"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/utknl/seshat.git"

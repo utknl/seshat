@@ -16,7 +16,5 @@ describe('test suite for ts', () => {
             }
         })
 
-        cy.getByPlaceHolder()
-
     })
 })

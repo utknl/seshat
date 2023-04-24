@@ -1,0 +1,24 @@
+{
+  "name": "seshat",
+  "version": "1.0.0",
+  "description": "a cypress automation framework with typescript",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utknl/seshat.git"
+  },
+  "author": "utknl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utknl/seshat/issues"
+  },
+  "homepage": "https://github.com/utknl/seshat#readme",
+  "devDependencies": {
+    "cypress": "^12.10.0",
+    "pre-commit": "^1.2.2",
+    "typescript": "^5.0.4"
+  }
+}

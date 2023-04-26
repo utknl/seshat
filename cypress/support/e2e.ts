@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands/getElement'
 import './commands/clickRandomElement'
+import './commands/hoverOnRandomElement'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

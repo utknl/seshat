@@ -1,4 +1,3 @@
-import { getElement } from "@support/commands/getElement"
 import { clickRandomElement } from "@support/commands/clickRandomElement"
 import { Filters } from "@support/typings/filters"
 

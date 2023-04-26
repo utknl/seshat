@@ -10,14 +10,16 @@ module.exports = defineConfig({
     saveAllAttempts: false,
   },
   video: false,
-  retries: 1,
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on)
     },
   },
   env: {
-    baseUrl: "https://www.perlego.com/"
+    baseUrl: "https://www.perlego.com/",
+    email: "seshattest@gmail.com",
+    password: "PerCy_123//",
+    workspaceName: "Utku's Workspace"
   },
   viewportWidth: 1536,
   viewportHeight: 960,

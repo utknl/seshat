@@ -23,15 +23,6 @@ declare global {
 }
 
 const getElement = (attribute: string, value: string) => {
-    Cypress.log({
-        displayName: 'getElement',
-        message: { attribute, value },
-        consoleProps() {
-            return {
-                selector: { attribute, value }
-            }
-        }
-    })
     return cy.get(`[${attribute}=${value}]`, { log: false })
 }
 

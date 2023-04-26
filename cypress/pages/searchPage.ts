@@ -1,4 +1,5 @@
 import { getElement } from "@support/commands/getElement"
+import { clickRandomElement } from "@support/commands/clickRandomElement"
 import { Filters } from "@support/typings/filters"
 
 export class SearchPage {
@@ -56,12 +57,12 @@ export class SearchPage {
         return cy.getElement('data-testid', 'FilterFormat')
     }
 
-    getPaginationButtonNext(){
-        return cy.getElement('data-component-locator','paginationButtonNext')
+    getPaginationButtonNext() {
+        return cy.getElement('data-component-locator', 'paginationButtonNext')
     }
 
-    getPaginationWrapper(){
-        return cy.getElement('data-component-locator','pagination-wrapper')
+    getPaginationWrapper() {
+        return cy.getElement('data-component-locator', 'pagination-wrapper')
     }
 
     applyRandomFilter(filter: Filters) {
@@ -79,8 +80,7 @@ export class SearchPage {
         this.getFilterAllLanguages().click()
         cy.getElement('data-testid', 'DropdownItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 
@@ -97,8 +97,7 @@ export class SearchPage {
         this.getFilterSearchBy().click()
         cy.getElement('data-component-locator', 'FilterListItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 
@@ -106,8 +105,7 @@ export class SearchPage {
         this.getFilterPublicationDate().click()
         cy.getElement('data-component-locator', 'FilterListItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 
@@ -115,8 +113,7 @@ export class SearchPage {
         this.getFilterTopic().click()
         cy.getElement('data-component-locator', 'FilterListItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 
@@ -124,8 +121,7 @@ export class SearchPage {
         this.getFilterPublisher().click()
         cy.getElement('data-component-locator', 'FilterListItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 
@@ -133,8 +129,7 @@ export class SearchPage {
         this.getFilterAuthor().click()
         cy.getElement('data-component-locator', 'FilterListItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 
@@ -142,8 +137,7 @@ export class SearchPage {
         this.getFilterFormat().click()
         cy.getElement('data-component-locator', 'FilterListItem')
             .then((elements) => {
-                let randomDropdown = Math.floor(Math.random() * elements.length)
-                cy.wrap(elements[randomDropdown]).click()
+                clickRandomElement(elements)
             })
     }
 

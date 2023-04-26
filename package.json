@@ -2,10 +2,10 @@
   "name": "seshat",
   "version": "1.0.0",
   "description": "a cypress automation framework with typescript",
-  "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test": "npx cypress run"
   },
   "pre-commit": [
     "lint"

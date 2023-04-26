@@ -26,7 +26,7 @@ npm run test
 
 Generated report can be checked on, when on the root folder: 
 ```
-./cypress/reports/ folder
+./cypress/reports/folder
 ```
 
 

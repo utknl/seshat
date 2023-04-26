@@ -17,8 +17,8 @@ module.exports = defineConfig({
   },
   env: {
     baseUrl: "https://www.perlego.com/",
-    email: "seshattest@gmail.com",
-    password: "PerCy_123//",
+    email: "mail",
+    password: "password",
     workspaceName: "Utku's Workspace"
   },
   viewportWidth: 1536,
